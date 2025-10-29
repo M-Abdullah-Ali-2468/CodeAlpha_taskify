@@ -9,6 +9,15 @@ const registerSchema = z.object(
 );
 
 
+const loginSchema = z.object(
+    {
+        email :z.string().email("Enter a valid email"),
+        password : z.string().min(6,"Enter valid password of length 6 minimum"),
+    }
+);
+
+
 export{
     registerSchema,
+    loginSchema,
 };
