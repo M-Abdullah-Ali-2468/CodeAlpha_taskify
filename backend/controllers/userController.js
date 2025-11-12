@@ -1,5 +1,5 @@
 // Importing the User model from models folder
-import { User } from "../models/userModel";
+import { User } from "../models/userModel.js";
 
 // Controller function to handle user registration
 export const registerUser = async (req, res) => {
